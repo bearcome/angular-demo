@@ -1,0 +1,34 @@
+<form [formGroup]="skillForm" (ngSubmit)="submit()">
+  <label for="name">
+    Name:
+    <input id="name" type="text" formControlName="name" />
+  </label>
+
+  <label for="framework">
+    Favorite Framework:
+    <input id="framework" type="text" formControlName="favoriteFramework" />
+  </label>
+
+  <label for="skillLevel">
+    skillLevel:
+    <input id="skillLevel" type="number" formControlName="skillLevel" />
+  </label>
+  <label for="startDate">
+    startDate:
+    <input id="startDate" type="date" formControlName="startDate" />
+  </label>
+  <label for="gender">
+    gender:
+    <select id="gender" formControlName="gender"  >
+      @for(g of genderService.getGenders();track $index)
+      {
+        <option value="{{$index}}" >{{g}}</option>
+      }
+    </select>
+  </label>
+  <button type="submit" [disabled]="!skillForm.valid">submit</button>
+</form>
+
+<h3>Display values</h3>
+<p>I'm {{skillForm.value.name}} and good at {{skillForm.value.favoriteFramework}} , and has {{skillForm.value.skillLevel}} years experience.</p>
+<p>I start to use the skill form {{skillForm.value.startDate}} and I am {{skillForm.value.gender}}.</p>

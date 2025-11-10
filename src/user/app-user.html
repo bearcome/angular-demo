@@ -1,0 +1,19 @@
+
+<h2>
+Welcome user: {{username}}  UserId (from param):{{userId()}}
+</h2>
+<h2>
+UserId (from parent param):{{userId()}}
+</h2>
+<h2>
+@if(isLogin)
+{
+    Yes, you are login！
+}
+@else
+{
+    No, you are not login!
+}
+</h2>
+<div >The div as below is editable,what's wrong?? </div>
+<div class="border" [contentEditable]="isDivEditable"></div>

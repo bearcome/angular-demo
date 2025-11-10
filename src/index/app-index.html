@@ -1,0 +1,20 @@
+<h1>Hello, {{ title() }} is running</h1>
+<h1>Welcome to {{city}} , {{starNum}} people are following you! </h1> 
+<button (click)="followUp()">follow up</button>
+@defer{
+    <app-user userId="abc"/>
+}@placeholder{
+    <p>user placeholder...</p>
+}@loading(minimum 2s){
+    <p>user component loading...</p>
+}
+<app-tech></app-tech>
+<app-parent></app-parent>
+<app-img></app-img>
+@defer(on viewport){
+    <app-user userId="abcd"/>
+}@placeholder{
+    <p>user placeholder...</p>
+}
+
+<app-pip-demo></app-pip-demo>
