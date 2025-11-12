@@ -1,6 +1,8 @@
 <h1>Hello, {{ title() }} is running</h1>
 <h1>Welcome to {{city}} , {{starNum}} people are following you! </h1> 
 <button (click)="followUp()">follow up</button>
+<app-infusion-card><app-infusion-card>
+
 @defer{
     <app-user userId="abc"/>
 }@placeholder{
@@ -18,3 +20,4 @@
 }
 
 <app-pip-demo></app-pip-demo>
+<mat-slide-toggle>Toggle me!</mat-slide-toggle>

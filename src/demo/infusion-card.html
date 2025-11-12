@@ -1,0 +1,37 @@
+<mat-card class="infusion-card" appearance="outlined">
+    <div class="infusion-card-head text-white px-1 rounded-top-2">
+        <div>
+            {{bedName}}
+        </div>
+        <div>
+            {{patientName}}-{{gender}}
+        </div>
+        <div>
+            <mat-chip class="text-bg-danger">{{status}}</mat-chip>
+        </div>
+    </div>
+    <mat-card-content class="d-flex justify-content-between">
+        <div class="infusion-card-content-left">
+            <p>total:{{totalMedicine}}ml</p>
+            <p>finish:{{finishedMedicine}}ml</p>
+            <p>left:{{leftMedicine}}ml</p>
+        </div>
+        <div class="infusion-bottle-bg d-flex flex-column mt-2 justify-content-around ">
+            <div class="infusion-bottle-bg-cover w-100 h-100"></div>
+        </div>
+        <div class="d-flex flex-column justify-content-evenly">
+            <p>Speed Set:{{dropSpeed}}</p>
+            <p>Real Speed:{{trueSpeed}}</p>
+        </div>
+    </mat-card-content>
+  <mat-card-footer class="d-flex  justify-content-between">
+    <mat-chip-set aria-label="Fish selection">
+        <mat-chip>{{mode}}</mat-chip>
+        <mat-chip>{{heal}}</mat-chip>
+        <mat-chip disabled>{{powerOn}}</mat-chip>
+    </mat-chip-set>
+    <div>
+        <mat-chip class="mx-2">{{exceptionName}}</mat-chip>
+    </div>
+  </mat-card-footer>
+</mat-card>

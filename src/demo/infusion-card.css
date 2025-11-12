@@ -1,0 +1,27 @@
+.infusion-card{
+    max-width: 310px;
+}
+
+.infusion-card-head
+{
+    display: flex;
+    height: 36px;
+    line-height:36px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #CD9640 ;
+}
+.infusion-card-content-left{
+
+}
+.infusion-bottle-bg{
+    width:62px;
+    height:93px;
+    background:linear-gradient(to bottom,transparent 0%, transparent 50%, #CD9640 50%, #CD9640 85%,transparent 85%, transparent 100%);
+    background-color: #FFFFFF;
+}
+.infusion-bottle-bg-cover{
+     background: url('../../public/bottle.png');
+     background-size:cover;
+     background-color: transparent;
+}
